@@ -16,13 +16,7 @@ Install python from https://www.python.org/downloads/.
 Then use pip install -r requirements.txt to install all dependencies. 
 Create a .env file in this Format: 
 
-DISCORD_TOKEN = DISCORD_TOKEN_HERE
-
 API_KEY = HYPIXEL_APIKEY_HERE
-
-ANTICHEAT_CHANNEL = DISCORD_CHANNELID_HERE
-
-STAFF_CHANNEL = DISCORD_CHANNELID_HERE
 
 Fill in all the details and then run the main.py with python. 
 ## Authors
