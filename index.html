@@ -1,48 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Script Showcase</title>
     <style>
         body {
-            background-image: url('IMG_5824.jpeg');
+            font-family: Arial, sans-serif;
+            background-image: url('IMG_5824.jpeg'); /* Replace 'IMG_5824.jpeg' with the actual image filename */
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+        }
+
+        header {
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: transparent; /* Making the container fully transparent */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .download-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+            display: block;
+            background-color: #4a148c; /* Dark purple */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 auto; /* Centering the button */
+            width: fit-content; /* Setting width to fit the content (the text) */
+        }
+
+        .download-button:hover {
+            background-color: #38006b; /* Darken the hover color if desired */
         }
 
         .discord-button {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
+            display: block;
+            background-color: #7289da; /* Discord blue */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 auto; /* Centering the button */
+            width: fit-content; /* Setting width to fit the content (the text) */
         }
 
-        /* Additional CSS styles can be added here to customize the website appearance */
+        .discord-button:hover {
+            background-color: #5a68a7; /* Darken the hover color if desired */
+        }
     </style>
 </head>
+
 <body>
-    <div>
-        <!-- Add the features of your Python script here -->
+    <header>
         <h1>Python Script Showcase</h1>
-        <p>Feature 1: Lorem ipsum dolor sit amet.</p>
-        <p>Feature 2: Consectetur adipiscing elit.</p>
-        <p>Feature 3: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+    </header>
+    <div class="container">
+        <h2>Description</h2>
+        <p>Your Python script description goes here.</p>
 
-    <div class="download-button">
-        <a href="https://github.com/Joshiy13/Ban-Notifier" download>
-            <button>Download Python Script</button>
-        </a>
-    </div>
+        <h2>Features</h2>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <!-- Add more features here -->
+        </ul>
 
-    <div class="discord-button">
-        <a href="https://discord.gg/9X96hYeweP" target="_blank">
-            <button>Join Discord</button>
-        </a>
+        <h2>Screenshots</h2>
+        <!-- Add screenshots of your script in action here -->
+
+        <a class="download-button" href="https://github.com/Joshiy13/Ban-Notifier" download>Download Python Script</a>
+        <a class="discord-button" href="https://discord.gg/9X96hYeweP" target="_blank">Join Discord</a>
     </div>
 </body>
+
 </html>
