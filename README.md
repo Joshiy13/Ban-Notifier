@@ -1,7 +1,7 @@
 
 # Hypixel Ban Notifier
 
-This python script checks the Hypixel api for recent watchdog and staff bans and prints them to the console.
+This python script checks the Hypixel api for recent watchdog and staff bans and prints them to the console. Join Discord for support.
 
 
 
