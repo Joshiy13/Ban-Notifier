@@ -8,11 +8,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin to fill the whole screen */
             background-image: url('IMG_5824.jpeg'); /* Replace 'IMG_5824.jpeg' with the actual image filename */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh; /* Set minimum height to fill the viewport */
         }
 
         header {
@@ -39,6 +44,7 @@
             border-radius: 5px;
             margin: 0 auto; /* Centering the button */
             width: fit-content; /* Setting width to fit the content (the text) */
+            margin-bottom: 20px; /* Add margin at the bottom */
         }
 
         .download-button:hover,
@@ -62,10 +68,10 @@
             <li>Feature 2</li>
             <!-- Add more features here -->
         </ul>
-
-        <a class="download-button" href="https://github.com/Joshiy13/Ban-Notifier" download>Download Python Script</a>
-        <a class="discord-button" href="https://discord.gg/9X96hYeweP" target="_blank">Join Discord</a>
     </div>
+
+    <a class="download-button" href="https://github.com/Joshiy13/Ban-Notifier" download>Download Python Script</a>
+    <a class="discord-button" href="https://discord.gg/9X96hYeweP" target="_blank">Join Discord</a>
 </body>
 
 </html>
