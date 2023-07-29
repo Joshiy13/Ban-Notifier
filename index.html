@@ -8,11 +8,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin to fill the whole screen */
             background-image: url('IMG_5824.jpeg'); /* Replace 'IMG_5824.jpeg' with the actual image filename */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh; /* Set minimum height to fill the viewport */
         }
 
         header {
@@ -29,34 +34,32 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .download-button {
-            display: block;
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .download-button,
+        .discord-button {
             background-color: #4a148c; /* Dark purple */
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin: 0 auto; /* Centering the button */
             width: fit-content; /* Setting width to fit the content (the text) */
-        }
-
-        .download-button:hover {
-            background-color: #38006b; /* Darken the hover color if desired */
+            display: inline-block;
+            margin-bottom: 20px; /* Add margin at the bottom */
         }
 
         .discord-button {
-            display: block;
-            background-color: #4a148c; /* Discord blue */
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0 auto; /* Centering the button */
-            width: fit-content; /* Setting width to fit the content (the text) */
+            margin-top: 10px; /* Add margin at the top */
         }
 
+        .download-button:hover,
         .discord-button:hover {
-            background-color: #5a68a7; /* Darken the hover color if desired */
+            background-color: #38006b; /* Darken the hover color if desired */
         }
     </style>
 </head>
@@ -75,10 +78,9 @@
             <li>Feature 2</li>
             <!-- Add more features here -->
         </ul>
+    </div>
 
-        <h2>Screenshots</h2>
-        <!-- Add screenshots of your script in action here -->
-
+    <div class="buttons-container">
         <a class="download-button" href="https://github.com/Joshiy13/Ban-Notifier" download>Download</a>
         <a class="discord-button" href="https://discord.gg/9X96hYeweP" target="_blank">Join Discord</a>
     </div>
