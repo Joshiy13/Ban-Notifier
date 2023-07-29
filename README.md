@@ -5,7 +5,7 @@ This python script checks the Hypixel api for recent watchdog and staff bans and
 
 
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) [Discord](https://img.shields.io/badge/Discord-blue)(https://discord.gg/9X96hYeweP)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) [Discord](https://img.shields.io/badge/discord-blue)(https://discord.gg/9X96hYeweP)
 
 
 ## Deployment
