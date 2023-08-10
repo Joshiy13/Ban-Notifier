@@ -21,4 +21,4 @@ API_KEY = HYPIXEL_APIKEY_HERE
 Fill in all the details and then run the main.py with python. 
 ## Authors
 
-- [@joshiy13](https://www.github.com/octokatherine)
+- [@joshiy13](https://www.github.com/joshiy13)
