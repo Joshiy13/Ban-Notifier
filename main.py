@@ -12,7 +12,7 @@ API_KEY = os.getenv("API_KEY")
 
 last_staff_total = 0
 last_watchdog_total = 0
-current_version = "1.3.1"
+current_version = "1.3.2"
 new_version_displayed = False
 
 def check_new_release():
@@ -68,15 +68,16 @@ if new_release_url:
 else:
     banner = """
 
- _    _             _          _   ____                _   _       _   _  __ _              ____   ____  ____  
-| |  | |           (_)        | | |  _ \              | \ | |     | | (_)/ _(_)            / /_ | |___ \/_ \ \ 
-| |__| |_   _ _ __  ___  _____| | | |_) | __ _ _ __   |  \| | ___ | |_ _| |_ _  ___ _ __  | | | |   __) || || |
-|  __  | | | | '_ \| \ \/ / _ \ | |  _ < / _` | '_ \  | . ` |/ _ \| __| |  _| |/ _ \ '__| | | | |  |__ < | || |
-| |  | | |_| | |_) | |>  <  __/ | | |_) | (_| | | | | | |\  | (_) | |_| | | | |  __/ |    | | | |_ ___) || || |
-|_|  |_|\__, | .__/|_/_/\_\___|_| |____/ \__,_|_| |_| |_| \_|\___/ \__|_|_| |_|\___|_|    | | |_(_)____(_)_|| |
-         __/ | |                                                                           \_\             /_/ 
-        |___/|_|                                                                                               
-                                                                                             
+
+ _    _             _          _   ____                _   _       _   _  __ _              ____   ____   _____  
+| |  | |           (_)        | | |  _ \              | \ | |     | | (_)/ _(_)            / /_ | |___ \ |__ \ \ 
+| |__| |_   _ _ __  ___  _____| | | |_) | __ _ _ __   |  \| | ___ | |_ _| |_ _  ___ _ __  | | | |   __) |   ) | |
+|  __  | | | | '_ \| \ \/ / _ \ | |  _ < / _` | '_ \  | . ` |/ _ \| __| |  _| |/ _ \ '__| | | | |  |__ <   / /| |
+| |  | | |_| | |_) | |>  <  __/ | | |_) | (_| | | | | | |\  | (_) | |_| | | | |  __/ |    | | | |_ ___) | / /_| |
+|_|  |_|\__, | .__/|_/_/\_\___|_| |____/ \__,_|_| |_| |_| \_|\___/ \__|_|_| |_|\___|_|    | | |_(_)____(_)____| |
+         __/ | |                                                                           \_\               /_/ 
+        |___/|_|                                                                                                 
+                                                                                           
 
 by joshiy13
     """
@@ -97,10 +98,10 @@ async def check_punishment_stats():
                 current_time = datetime.now().strftime('%H:%M:%S')
 
                 if last_staff_total != 0 and staff_total > last_staff_total:
-                    print(f"Staff ban #{staff_total} ({current_time}). This was a staff ban. Be careful!")
+                    print(f"Staff ban #{staff_total} ({current_time}).")
 
                 if last_watchdog_total != 0 and watchdog_total > last_watchdog_total:
-                    print(f"Watchdog ban #{watchdog_total} ({current_time}). Don't worry, this was an anticheat ban.")
+                    print(f"Watchdog ban #{watchdog_total} ({current_time}).")
 
                 last_staff_total = staff_total
                 last_watchdog_total = watchdog_total
