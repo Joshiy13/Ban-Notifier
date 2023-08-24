@@ -12,7 +12,7 @@ API_KEY = os.getenv("API_KEY")
 
 last_staff_total = 0
 last_watchdog_total = 0
-current_version = "1.2.0"
+current_version = "1.3.1"
 new_version_displayed = False
 
 def check_new_release():
